@@ -15,9 +15,6 @@ import os
 import csv
 import xlsxwriter
 
-# #config variables 
-config = config['development']
-
 
 def get_non_complete_count(): 
     non_complete_count = db.session.query(Orders.OrderTrackingID, ClientMaster.ClientID, OrderDrivers.DriverID)
