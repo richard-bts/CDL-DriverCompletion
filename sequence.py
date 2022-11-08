@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 
 try:
-    response = requests.get('http://172.24.16.201:80/report')
+    response = requests.get('http://localhost/drivercompletion/report')
     response.raise_for_status()
     dir_path = os.path.dirname(os.path.realpath(__file__))
     file_path = os.path.join(dir_path, "lastreport.txt")

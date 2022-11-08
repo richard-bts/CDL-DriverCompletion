@@ -95,7 +95,7 @@ def get_driver_report():
             if total_summary['total'] > 0:
                 total_summary['percent_complete'] = round((total_summary['complete']/total_summary['total']) * 100, 2) 
             
-        
+        # return {'drivers': drivers, 'count': len(drivers), 'summary': summary, 'total': total_summary}
         today = date.today()
         today = today.strftime("%m_%d_%y")
         file_name = 'Driver_Completion_Report-' + today + '.xlsx'
